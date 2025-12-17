@@ -1,0 +1,23 @@
+{
+    "version": "0.1.9",
+    "description": "Hypr is a small tool to simplify git worktrees",
+    "homepage": "https://github.com/Stephanvs/hypr",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Stephanvs/hypr/releases/download/v0.1.9/hypr-windows-x64.zip",
+            "hash": "0399aafd9675f3a592778d2f6d549b55fb7033309b7f0547a8e68ac6bcf2dcdc"
+        }
+    },
+    "extract_dir": "hypr-windows-x64",
+    "bin": "hypr.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Stephanvs/hypr/releases/download/v$version/hypr-windows-x64.zip"
+            }
+        },
+        "extract_dir": "hypr-windows-x64"
+    }
+}
